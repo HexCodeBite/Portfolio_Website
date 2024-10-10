@@ -22,7 +22,6 @@ module.exports = {
 	},
   	extend: {
   		colors: {
-			primary: '#1c1c22',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -33,10 +32,10 @@ module.exports = {
   				DEFAULT: 'hsl(var(--popover))',
   				foreground: 'hsl(var(--popover-foreground))'
   			},
-  			// primary: {
-  			// 	DEFAULT: 'hsl(var(--primary))',
-  			// 	foreground: 'hsl(var(--primary-foreground))'
-  			// },
+  			primary: {
+  				DEFAULT: '#1c1c22',
+  				foreground: 'hsl(var(--primary-foreground))'
+  			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
   				foreground: 'hsl(var(--secondary-foreground))'
@@ -55,7 +54,10 @@ module.exports = {
   				DEFAULT: 'hsl(var(--destructive))',
   				foreground: 'hsl(var(--destructive-foreground))'
   			},
-  			border: 'hsl(var(--border))',
+  			border: {
+				DEFAULT: '#00ff99',
+				foreground: 'hsl(var(--border))'
+			},
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
   			chart: {
