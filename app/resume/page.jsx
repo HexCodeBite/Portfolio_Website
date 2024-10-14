@@ -1,4 +1,4 @@
-
+"use clent"
 const Resume = () => {
     return (
         <div>resume page</div>
