@@ -1,3 +1,4 @@
+"use client";
 import {Button} from "@/components/ui/button";
 import {FiDownload} from 'react-icons/fi'
 import { useEffect } from 'react';
@@ -6,25 +7,20 @@ import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
-// document.getElementById("downloadBtn").addEventListener("click", function() {
-//     const link = document.createElement("a");
-//     link.href = "https://drive.usercontent.google.com/u/0/uc?id=1XkE2AUL63jTVXHlnIykLNVxjGtkF5uX6&export=download";
-//     link.download = "CV_UrsatiiVladimir.pdf";
-//     link.click();
-// });
+const Home = () => {useEffect(() => {
+    const button = document.getElementById("downloadBtn");
+    if (button) {
+        const handleDownload = () => {
+            const link = document.createElement("a");
+            link.href = "https://drive.usercontent.google.com/u/0/uc?id=1XkE2AUL63jTVXHlnIykLNVxjGtkF5uX6&export=download"; // Ссылка на файл
+            link.download = "CV_UrsatiiVladimir.pdf"; // Имя файла
+            link.click();
+        };
+        button.addEventListener("click", handleDownload);
+        // Убираем обработчик при размонтировании компонента
+        return () => button.removeEventListener("click", handleDownload);
+    }}, []);
 
-const Home = () => {
-    useEffect(() => {
-        const button = document.getElementById("downloadBtn");
-        if (button) {
-            button.addEventListener("click", () => {
-                const link = document.createElement("a");
-                link.href = "https://drive.usercontent.google.com/u/0/uc?id=1XkE2AUL63jTVXHlnIykLNVxjGtkF5uX6&export=download"; // Ссылка на файл
-                link.download = "CV_UrsatiiVladimir.pdf"; // Имя файла
-                link.click();
-            });
-        }
-    }, []);
   return (
       <section className="h-full">
           <div className="container mx-auto h-full">
