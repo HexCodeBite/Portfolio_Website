@@ -6,7 +6,10 @@ import {SiTailwindcss, SiNextdotjs} from 'react-icons/si'
 // about data
 const about = {
     title: "About me",
-    description:"sdfgdfg dfogspdofgj dsfogdg fdog f godfpgsdofg fggg fd fgodfgpodfg godfgj gfggggggd.",
+    description:"I’m dedicated to growing and excited to learn new things. I’m open to taking on any " +
+        "challenges and enjoy working with others to achieve common goals. My strong problem-solving abilities, " +
+        "attention to detail, and adaptability make me a valuable asset to any team. I believe in leveraging my skills " +
+        "to contribute positively while learning from every opportunity.",
     info: [
         {
             fieldName:"Name",
@@ -37,22 +40,28 @@ const about = {
 const experience = {
     icon: '/assets/resume/badge.svg',
     title: 'My experience',
-    description: "Sdfgdfg dfogspdofgj dsfogdg fdog f godfpgsdofg fggg fd fgodfgpodfg godfgj gfggggggd.",
+    description: "I’ve worked across various domains, gaining valuable insights and skills. My diverse background " +
+        "helps me approach challenges with a fresh perspective, ensuring creative and effective solutions.",
     items: [
         {
-            company: "company1",
-            position: "Front-End Developer Intern",
-            duration: " 2022 - Present"
+            company: "Foc de Artficii",
+            position: "Pyrotechnician",
+            duration: " 2018 - 2023"
         },
         {
-            company: "company1",
+            company: "NVGroup SRL",
             position: "Front-end Developer",
-            duration: " 2022 - Present"
+            duration: "Feb. - Apr. 2022"
         },
         {
-            company: "company1",
-            position: "Freelance Web Developer",
-            duration: " 2022 - Present"
+            company: "Crowd Marketing SRL",
+            position: "SEO content-manager",
+            duration: "Sep. - Dec. 2022"
+        },
+        {
+            company: "MetaLabs",
+            position: "Game designer",
+            duration: "Dec. 2023 - Apr. 2024"
         },
 
     ]
@@ -60,22 +69,24 @@ const experience = {
 const education = {
     icon: '/assets/resume/badge.svg',
     title: 'My education',
-    description: "Sdfgdfg dfogspdofgj dsfogdg fdog f godfpgsdofg fggg fd fgodfgpodfg godfgj gfggggggd.",
+    description: "I graduated from university with a solid foundation in development. I also completed a bootcamp that" +
+        " enhanced my practical skills. Currently, I’m taking online courses to continually expand my knowledge and" +
+        " stay updated with industry trends.",
     items: [
         {
             institution: "Technical University of Moldova",
             degree: "Engineering",
-            duration: " 2022 - Present"
+            duration: "2019 - 2023"
         },
         {
             institution: "Technical University of Moldova",
-            degree: "Engineering",
-            duration: " 2022 - Present"
+            degree: "C++ BOOTCAMP",
+            duration: "Dec. 2021"
         },
         {
             institution: "Online Platform UDEMY",
-            degree: "Engineering",
-            duration: " 2022 - Present"
+            degree: "Javascript + React",
+            duration: " 2024 - Present"
         },
 
 
@@ -83,7 +94,8 @@ const education = {
 }
 const skills = {
     title: 'My skills',
-    description: "Sdfgdfg dfogspdofgj dsfogdg fdog f godfpgsdofg fggg fd fgodfgpodfg godfgj gfggggggd.",
+    description: "I’m proficient in various technologies that help me create effective web solutions. My passion" +
+        " for learning drives me to continually enhance my skill set.",
     skillList: [
         {
             icon: <FaHtml5 />,
@@ -101,18 +113,18 @@ const skills = {
             icon: <FaReact />,
             name: "react.js"
         },
-        {
-            icon: <SiNextdotjs />,
-            name: "next.js"
-        },
+        // {
+        //     icon: <SiNextdotjs />,
+        //     name: "next.js"
+        // },
         {
             icon: <SiTailwindcss />,
             name: "Tailwind.css"
         },
-        {
-            icon: <FaNodeJs />,
-            name: "node.js"
-        },
+        // {
+        //     icon: <FaNodeJs />,
+        //     name: "node.js"
+        // },
         {
             icon: <FaFigma />,
             name: "figma"

@@ -7,27 +7,29 @@ const services = [
     {
         num: '01',
         title: 'Web Development',
-        description: 'Lorem dsfsdf dsfsd fsdfsf fd sdfsdfsdffff ffd fdsfsdfsf.',
+        description: 'I turn your ideas into responsive and user-friendly websites. Let’s work together to create' +
+            ' something great that looks good on any device! I focus on clean code and a smooth user experience' +
+            ' to help your business stand out.',
         href: ''
     },
-    {
-        num: '02',
-        title: 'UI/UX Design',
-        description: 'Lorem dsfsdf dsfsd fsdfsf fd sdfsdfsdffff ffd fdsfsdfsf.',
-        href: ''
-    },
-    {
-        num: '03',
-        title: 'Logo Design',
-        description: 'Lorem dsfsdf dsfsd fsdfsf fd sdfsdfsdffff ffd fdsfsdfsf.',
-        href: ''
-    },
-    {
-        num: '04',
-        title: 'SEO',
-        description: 'Lorem dsfsdf dsfsd fsdfsf fd sdfsdfsdffff ffd fdsfsdfsf.',
-        href: ''
-    },
+    // {
+    //     num: '02',
+    //     title: 'UI/UX Design',
+    //     description: 'Lorem dsfsdf dsfsd fsdfsf fd sdfsdfsdffff ffd fdsfsdfsf.',
+    //     href: ''
+    // },
+    // {
+    //     num: '03',
+    //     title: 'Logo Design',
+    //     description: 'Lorem dsfsdf dsfsd fsdfsf fd sdfsdfsdffff ffd fdsfsdfsf.',
+    //     href: ''
+    // },
+    // {
+    //     num: '04',
+    //     title: 'SEO',
+    //     description: 'Lorem dsfsdf dsfsd fsdfsf fd sdfsdfsdffff ffd fdsfsdfsf.',
+    //     href: ''
+    // },
 ]
 
 import {motion} from "framer-motion";
