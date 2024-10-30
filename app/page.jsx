@@ -6,6 +6,13 @@ import Photo from "@/components/Photo";
 import Stats from "@/components/Stats"
 
 const Home = () => {
+    document.getElementById("downloadBtn").addEventListener("click", function() {
+        const link = document.createElement("a");
+        link.href = "https://drive.google.com/file/d/1XkE2AUL63jTVXHlnIykLNVxjGtkF5uX6/view?usp=sharing";
+        link.download = "CV_UrsatiiVladimir.pdf";
+        link.click();
+    });
+
   return (
       <section className="h-full">
           <div className="container mx-auto h-full">
@@ -18,7 +25,7 @@ const Home = () => {
                         various programing languages and technologies.</p>
                     {/*btn and socials*/}
                     <div className="flex flex-col xl:flex-row items-center gap-8">
-                        <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
+                        <Button variant="outline" size="lg" className="downloadBtn uppercase flex items-center gap-2">
                             <span>Download CV</span>
                             <FiDownload className="text-xl" />
                         </Button>
