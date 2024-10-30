@@ -6,6 +6,12 @@ import Photo from "@/components/Photo";
 import Stats from "@/components/Stats"
 
 const Home = () => {
+    document.getElementById("downloadBtn").addEventListener("click", function() {
+        const link = document.createElement("a");
+        link.href = "https://drive.usercontent.google.com/u/0/uc?id=1XkE2AUL63jTVXHlnIykLNVxjGtkF5uX6&export=download";
+        link.download = "CV_UrsatiiVladimir.pdf";
+        link.click();
+    });
   return (
       <section className="h-full">
           <div className="container mx-auto h-full">
@@ -17,7 +23,7 @@ const Home = () => {
                     <p className="max-w-[500px] mb-9 text-white/80">I excel at crafting elegant digital experiences and I am proficient in
                         various programing languages and technologies.</p>
                     {/*btn and socials*/}
-                    <div className="flex flex-col xl:flex-row items-center gap-8">
+                    <div id="downloadBtn" className="flex flex-col xl:flex-row items-center gap-8">
                         <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
                             <span>Download CV</span>
                             <FiDownload className="text-xl" />
